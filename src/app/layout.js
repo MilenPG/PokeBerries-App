@@ -1,5 +1,11 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { DotGothic16 } from 'next/font/google';
+
+const dotGothic16 = DotGothic16({
+  weight: ['400'],
+  subsets: ['latin'],
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
