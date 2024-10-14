@@ -1,6 +1,8 @@
 "use client"
 import { useEffect, useState } from 'react'
 import { getPokeAPI } from '../lib/ConnectPokeAPI';
+import { doppio_One} from '../fonts/fonts';
+import Image from 'next/image';
 
 export default function Card() {
      const [berriesArray, setBerriesArray] = useState([]); // estado inicial como array vacío
@@ -25,12 +27,14 @@ export default function Card() {
         <>
         {berriesArray.map((berry) => (
             <li key={berry.id} className="card">
-                <span className="card-title">{berry.name}</span>
-                <img 
+                <span className={`${doppio_One.className} antialiased card-title`}>{berry.name}</span>
+                <Image
                     className="card-img" 
-                    src= 'https://github.com/MilenPG/PokeBerries-App/blob/card-dev/src/app/assets/berricon.png?raw=true'
-                    alt={berry.name}>
-                </img>
+                    src= '/assets/pokebackground.png'
+                    alt={`${berry.name} image`}
+                    width={80}
+                    height={80}
+                />
                 <p className="card-info">{berry.url}</p>
             </li>
           ))}
