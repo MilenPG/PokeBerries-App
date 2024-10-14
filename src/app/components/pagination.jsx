@@ -1,4 +1,4 @@
-
+/*
 export default function Pagination({ currentPage, totalPages, onNext, onPrev }) {
     return (
       <div className="pagination-buttons"> 
@@ -13,4 +13,4 @@ export default function Pagination({ currentPage, totalPages, onNext, onPrev }) 
     );
   }
 
-  /*para hacerlo más escalable, habría creado un componente solo de button pero no alcancé */
+*/
