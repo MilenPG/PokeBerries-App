@@ -15,7 +15,7 @@ body {
   background-image: url('https://github.com/MilenPG/PokeBerries-App/blob/main/assets/pixelgrass2.png?raw=true');
 }
 
-.locations-background {
+.items-background {
   background-image: url('https://github.com/MilenPG/PokeBerries-App/blob/main/assets/pokebackground.png?raw=true');
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,12 +103,12 @@ h1 {
   text-transform: uppercase;
 }
 
-/*.card-img {
+.card-img {
   height: 80px;
   width: 80px;
   border-radius: 100px;
   object-fit: cover;
-}*/
+}
 
 /*.like-button {
   padding: 2% 3%;

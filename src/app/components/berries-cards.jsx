@@ -27,7 +27,9 @@ export default function BerriesCards() {
         <ul className="berries-cards">
         {berriesArray.map((berry) => (
             // eslint-disable-next-line react/jsx-key
-            <Card dataItem={berry}/>
+            <Card 
+            dataProps={berry}
+            />
           ))}       
         </ul>
     )

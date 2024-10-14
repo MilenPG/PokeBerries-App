@@ -1,20 +1,18 @@
 import { doppio_One} from '../fonts/fonts';
 import Image from 'next/image';
 
-export default function Card({dataItem}) { 
+export default function Card({dataProps}) { 
     return (
-        <li key={dataItem.id} className="card">
-            <span className={`${doppio_One.className} antialiased card-title`}>
-                {dataItem.name}
-            </span>
-            <Image
+        <li key={dataProps.id} className="card">
+            <img
                 className="card-img" 
-                src= '/assets\berricon.png'
-                alt={`${dataItem.name} image`}
-                width={80}
-                height={80}
+                src= {dataProps.image} 
+                alt={`${dataProps.name} image`}
             />
-            <p className="card-info">{dataItem.url}</p>
+            <span className={`${doppio_One.className} antialiased card-title`}>
+                {dataProps.name}
+            </span>
+            <p className="card-info">{dataProps.extra}</p>
         </li>
     )
 }

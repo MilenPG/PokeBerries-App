@@ -9,14 +9,14 @@ export default function Nav() {
   return (
     <nav>
         <Link 
-        className={`link ${pathname === '/' ? styles.berrieslink : ''}`} 
-        href="/">
-        Poké Berries
+          className={`link ${pathname === '/' ? styles.berrieslink : ''}`} 
+          href="/">
+          Poké Berries
         </Link>
         <Link
-        className={`link ${pathname === '/locations' ? styles.locationslink : ''}`} 
-        href="/locations">
-        Poké Locations
+          className={`link ${pathname === '/items' ? styles.itemslink : ''}`} 
+          href="/items">
+          Poké Items
         </Link>
     </nav>
   )
