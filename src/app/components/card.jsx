@@ -25,7 +25,7 @@ export default function Card() {
         <>
         {berriesArray.map((berry) => (
             <li key={berry.id} className="card">
-                <span>{berry.name}</span>
+                <span className="card-title">{berry.name}</span>
                 <img 
                     className="card-img" 
                     src= 'https://github.com/MilenPG/PokeBerries-App/blob/card-dev/src/app/assets/berricon.png?raw=true'

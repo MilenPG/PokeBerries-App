@@ -5,7 +5,7 @@ export const getPokeAPI = () => {
     .then((res) => res.json())
     .then((resBerries) => {
         const berries = resBerries.results
-            console.log(berries[0].name) 
+            console.log(berries[0].name) // chequeo recuperación de datos
             return berries;
                                
     })
