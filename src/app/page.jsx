@@ -4,11 +4,9 @@ import Header from "./components/header";
 export default function Home() {
    
   return (
-    <div className="page-container home-background" >
-      <main>
+    <main className="page-container home-background" >
         <Header headerTitle={"Poké Berries"}/>
         <BerriesCards/>
-      </main>
-    </div>
+    </main>
   );
 }

@@ -68,7 +68,7 @@ h1 {
   font-size: 2.1rem;
 }
 
-.berries-cards, ul {
+.berries-cards, .items-cards {
   margin: 0;
   padding: 0;
   display: flex;
@@ -87,8 +87,8 @@ h1 {
   padding: 2%;
   background: 0e0e0e;
   color: rgb(20, 20, 20);
-  height: 200px;
-  width: 150px;
+  height: 160px;
+  width: 130px;
   word-break: break-word;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -99,7 +99,7 @@ h1 {
 .card-title {
   margin-top: 1rem;
   /*font-family: "Doppio One", sans-serif;*/
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 

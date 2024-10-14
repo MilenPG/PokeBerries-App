@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from '../home.module.css'
  
 export default function Nav() {
-  const pathname = usePathname()
+  const pathname = usePathname() //para destacar la página activa
 
   return (
     <nav>

@@ -3,10 +3,11 @@ import { useEffect, useState } from 'react';
 import { getBerryAPI } from '../lib/ConnectPokeAPI';
 import Card from './card';
 import Pagination from '@mui/material/Pagination';
+import styles from '../home.module.css'
 
 export default function BerriesCards() {
   const [berriesArray, setBerriesArray] = useState([]);
-  const [loading, setLoading] = useState(true);
+  //const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
 
@@ -17,6 +18,7 @@ export default function BerriesCards() {
       })
   }, []);
 
+  //lógica de paginación: 
   const indexOfLastBerry = currentPage * itemsPerPage;
   const indexOfFirstBerry = indexOfLastBerry - itemsPerPage;
   const currentBerries = berriesArray.slice(indexOfFirstBerry, indexOfLastBerry);
@@ -41,9 +43,8 @@ export default function BerriesCards() {
         page={currentPage}
         onChange={handlePageChange}
         color="standard"
-        variant="outlined"
         shape="rounded"
-        style={{marginTop: '20px', display: 'flex', flexDirection:'row', justifyContent: 'space-around' }}
+        className={styles.pagination}
       />
     </>
   );

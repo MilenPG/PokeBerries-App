@@ -1,5 +1,5 @@
 import { doppio_One} from '../fonts/fonts';
-import Image from 'next/image';
+//import Image from 'next/image';
 
 export default function Card({dataProps}) { 
     return (

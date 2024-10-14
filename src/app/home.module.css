@@ -6,6 +6,12 @@
   color: rgba(2, 132, 198, 1)
 }
 
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  flex-direction:row; 
+  justify-content:space-around;
+}
 /* .bodyback1 {
   background-image: url('https://github.com/MilenPG/PokeBerries-App/blob/main/assets/pixelgrass2.png?raw=true');
 }

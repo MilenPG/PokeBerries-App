@@ -29,7 +29,7 @@ export default function ItemsCards() {
         console.error('Error fetching items:', err);
        // setLoading(false);
       });
-  }, []); // Solo se ejecuta una vez al montar el componente
+  }, []); // solo se ejecuta una vez al montar el componente, si no, entra en loop
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -60,10 +60,8 @@ export default function ItemsCards() {
         count={totalPages}
         page={currentPage}
         onChange={handlePageChange}
-        color="standard"
-        variant="outlined"
         shape="rounded"
-        style={{ marginTop: '20px', display: 'flex', flexDirection:'row', justifyContent: 'center' }}
+        className={styles.pagination}
       />
     </>
   );
