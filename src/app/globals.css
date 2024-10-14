@@ -2,11 +2,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-  font-family: monospace;*/
   -webkit-font-smoothing: antialiased;
-  background-image: url('https://i.pinimg.com/564x/4d/f5/d4/4df5d42b46ae9a0ce761a5da3b977e26.jpg');
-  object-fit: fill;
 }
 
 html,
@@ -15,27 +11,70 @@ body {
   overflow-x: hidden;
 }
 
-.home-container {
-display: flex;
-flex-direction: column;
-align-items: center;
-border: solid 1px var(--foreground);
-border-radius: 15px;
-box-shadow:inset #ededed; 
-margin: 2%;
-padding: 2%;
+.home-background {
+  background-image: url('https://github.com/MilenPG/PokeBerries-App/blob/main/assets/pixelgrass2.png?raw=true');
 }
 
-h1{
+.locations-background {
+  background-image: url('https://github.com/MilenPG/PokeBerries-App/blob/main/assets/pokebackground.png?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  margin: 0;
+  background: ededed;
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.404);
+  text-decoration: none;
+  padding: 1.5%;
+}
+
+a:active {
+  box-shadow: rgba(0, 0, 0, 0.493);
+}
+
+a:hover {
+  color: rgba(0, 0, 0, 0.322);
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 2%;
+}
+
+main {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  align-self: flex-start;
+  padding-bottom: 0;
+}
+
+h1 {
+  margin: 0 0 0 2.1rem;
   color: #ededed;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
 }
 
-.cards-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 5%;
+.berries-cards, ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
 }
 
 .card {
@@ -47,6 +86,7 @@ gap: 5%;
   margin: 2%;
   padding: 2%;
   background: 0e0e0e;
+  color: rgb(20, 20, 20);
   height: 200px;
   width: 150px;
   word-break: break-word;
@@ -63,12 +103,12 @@ gap: 5%;
   text-transform: uppercase;
 }
 
-.card-img {
+/*.card-img {
   height: 80px;
   width: 80px;
   border-radius: 100px;
   object-fit: cover;
-}
+}*/
 
 /*.like-button {
   padding: 2% 3%;

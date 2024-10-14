@@ -1,10 +1,10 @@
 import { dotGothic16 } from "../fonts/fonts";
 
 
-export default function Header() {
+export default function Header({headerTitle}) {
     return (
     <header>  
-      <h1 className={`${dotGothic16.className} antialiased`}>Poké Berries</h1>   
+      <h1 className={`${dotGothic16.className} antialiased`}>{headerTitle}</h1>   
     </header>
   );
   }

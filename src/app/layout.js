@@ -1,5 +1,7 @@
 import "./globals.css";
 import { dosis } from "./fonts/fonts";
+import Nav from "./components/navigation";
+
 
 export const metadata = {
   title: "Poké Berries ¡Find yours!",
@@ -9,7 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${dosis.className} } antialiased`}>
+      
+      <body className={`${dosis.className} antialiased`}>
+        <Nav/>
         {children}
       </body>
     </html>

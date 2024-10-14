@@ -1,6 +1,7 @@
 const POKE_BERRIES_ENDPOINT = 'https://pokeapi.co/api/v2/berry/'
+const POKE_LOCATIONS_ENDPOINT = 'https://pokeapi.co/api/v2/location/'
 
-export const getPokeAPI = () => {
+export const getBerryAPI = () => {
     const fetchAPI = fetch(POKE_BERRIES_ENDPOINT)
     .then((res) => res.json())
     .then((resBerries) => {
@@ -23,3 +24,19 @@ export const getPokeAPI = () => {
 
     return promises;
 }*/
+
+export const getLocationsAPI = () => {
+    const fetchAPI = fetch(POKE_LOCATIONS_ENDPOINT)
+    .then((res) => res.json())
+    .then((reslocations) => {
+        const locations = reslocations.results
+            console.log(locations[0].name) // chequeo recuperación de datos
+            return locations;
+                               
+    })
+    .catch((error) => {
+        console.error("Error durante la solicitud de datos:", error);
+    });
+
+    return fetchAPI; 
+}
