@@ -12,5 +12,5 @@ Esta App permite que usuarios finales puedan visualizar algunos de los objetos q
 
 ##### Prototipo Figma:
 
-![Prototipo 1](assets\pokeprotoype1.png)
-![Prototipo 2](assets\pokeprotoype2.png)
+![Prototipo 1](https://github.com/MilenPG/PokeBerries-App/blob/main/assets/pokeprotoype1.png?raw=true)
+![Prototipo 2](https://github.com/MilenPG/PokeBerries-App/blob/main/assets/pokeprotoype2.png?raw=true)
