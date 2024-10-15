@@ -8,7 +8,7 @@ Esta App permite que usuarios finales puedan visualizar algunos de los objetos q
 - Todos los datos renderizados fueron obtenidos a partir de PokéApi mediante fetching de datos.
 
 ### UI / UX:
-- La interfaz, pensada en usuarios conocedores de Pokémon o del , fue diseñada con la intención de reutilizar elementos visuales presentes en el universo del juego, como los fondos, o fuentes pixeladas características del mundo arcade.
+- La interfaz, pensada en usuarios conocedores del videojuego, fue diseñada con la intención de reutilizar elementos visuales presentes en el universo del juego, como los fondos, o fuentes pixeladas características del mundo arcade.
 
 ##### Prototipo Figma:
 
