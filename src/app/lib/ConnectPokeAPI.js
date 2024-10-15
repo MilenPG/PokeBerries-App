@@ -5,8 +5,9 @@ export const getBerryAPI = () => {
     const fetchAPI = fetch(POKE_BERRIES_ENDPOINT)
     .then((res) => res.json())
     .then((resBerries) => {
+    //console.log(resBerries)
         const berries = resBerries.results
-            console.log(berries[0].name) // chequeo recuperación de datos
+            //console.log(berries[0].name) // chequeo recuperación de datos
             return berries;
                                
     })

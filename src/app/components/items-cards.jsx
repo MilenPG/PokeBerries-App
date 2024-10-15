@@ -47,11 +47,12 @@ export default function ItemsCards() {
       <ul className="items-cards">
         {currentItems.map((item) => (
           <Card 
+            key={item.id}
             dataProps={{
               id: item.id,
               name: item.name,
               image: item.sprites.default, 
-              extra: ''
+              extra: item.names[8].name
             }}
           />
         ))}
