@@ -7,7 +7,7 @@ import styles from '../home.module.css'
 
 export default function BerriesCards() {
   const [berriesArray, setBerriesArray] = useState([]);
-  //const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1); // setea la variable de acuerdo a la paginación
   const itemsPerPage = 6;
 
@@ -24,14 +24,13 @@ export default function BerriesCards() {
         .filter(result => result.status === 'fulfilled')
         .map(result => result.value);
 
-       // setLoading(false);
-       setBerriesArray(fetchedItemsBerries)
-       console.log(berriesArray)
+       setLoading(false);
+       setBerriesArray(fetchedItemsBerries)       
       })
   
       .catch(err => {
         console.error('Error fetching items:', err);
-       // setLoading(false);;
+        setLoading(false);
       })    
   }, []);
 
@@ -45,7 +44,7 @@ export default function BerriesCards() {
     setCurrentPage(value); 
   };
 
-  //if (loading) return <p>Loading...</p>;
+  if (loading) return <p>Loading...</p>;
 
   return (
     <>
@@ -57,7 +56,7 @@ export default function BerriesCards() {
             id: berry.id,
             name: berry.name,
             image: berry.sprites.default, 
-            extra: berry.name[8].name
+            extra: berry.names[8].name
           }} />
         ))}
       </ul>

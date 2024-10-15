@@ -7,7 +7,7 @@ import styles from '../home.module.css'
 
 export default function ItemsCards() {
   const [itemsArray, setItemsArray] = useState([]); // Estado inicial como array vacío
-  //const [loading, setLoading] = useState(true); // Estado de carga
+  const [loading, setLoading] = useState(true); // Estado de carga
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
 
@@ -23,11 +23,11 @@ export default function ItemsCards() {
           .map(result => result.value);
 
         setItemsArray(fetchedItems);
-       // setLoading(false);
+        setLoading(false);
       })
       .catch(err => {
         console.error('Error fetching items:', err);
-       // setLoading(false);
+        setLoading(false);
       });
   }, []); // solo se ejecuta una vez al montar el componente, si no, entra en loop
 
@@ -40,7 +40,7 @@ export default function ItemsCards() {
     setCurrentPage(value);
   };
 
-  //if (loading) return <p>Loading...</p>; // Muestra carga mientras se obtienen los datos
+  if (loading) return <p>Loading...</p>; // muestra carga mientras se obtienen los datos
 
   return (
     <>
